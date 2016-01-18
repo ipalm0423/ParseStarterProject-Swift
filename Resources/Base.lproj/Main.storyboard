@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Td-9c-ILP">
+                                <rect key="frame" x="275" y="284" width="51" height="31"/>
+                                <animations/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vme-6e-f6y">
+                                <rect key="frame" x="264" y="206" width="72.5" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qf-I2-OdF">
+                                <rect key="frame" x="270" y="360" width="61" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Switch"/>
+                                <connections>
+                                    <action selector="sendButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRQ-D6-9LI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwc-kF-8Z2">
+                                <rect key="frame" x="245.5" y="40" width="109.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Td-9c-ILP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5aX-dg-dRh"/>
+                            <constraint firstItem="1Td-9c-ILP" firstAttribute="top" secondItem="Vme-6e-f6y" secondAttribute="bottom" constant="37.5" id="LO9-dE-ehn"/>
+                            <constraint firstItem="Pwc-kF-8Z2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QME-zA-Phb"/>
+                            <constraint firstItem="Pwc-kF-8Z2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="TNK-i2-rmp"/>
+                            <constraint firstItem="Pwc-kF-8Z2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dBs-nz-19w"/>
+                            <constraint firstItem="1Td-9c-ILP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fCf-Bh-Kx1"/>
+                            <constraint firstItem="9Qf-I2-OdF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jrL-EK-r6b"/>
+                            <constraint firstItem="9Qf-I2-OdF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0j-Wd-l8f"/>
+                            <constraint firstItem="9Qf-I2-OdF" firstAttribute="top" secondItem="1Td-9c-ILP" secondAttribute="bottom" constant="45" id="x6Q-kx-u6F"/>
+                            <constraint firstItem="Vme-6e-f6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ynC-rk-YZq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dBs-nz-19w"/>
+                                <exclude reference="jrL-EK-r6b"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="connectionLabel" destination="Pwc-kF-8Z2" id="iPC-3G-dkr"/>
+                        <outlet property="label1" destination="Vme-6e-f6y" id="Oyd-rH-Abt"/>
+                        <outlet property="sendButton" destination="9Qf-I2-OdF" id="1zJ-y8-y1W"/>
+                        <outlet property="switch1" destination="1Td-9c-ILP" id="AJX-IZ-T5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0PE-jX-aTo">
+            <objects>
+                <viewController id="IHy-0F-QBK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h7d-Bm-wzo"/>
+                        <viewControllerLayoutGuide type="bottom" id="1wE-c7-cKl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWA-pF-zSo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4z-bl-uHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
